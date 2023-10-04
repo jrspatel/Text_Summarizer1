@@ -1,0 +1,9 @@
+# creates a folder to store the components
+artifacts_root: artifacts
+
+# if you need some paths or links which might be useful later you could store them here .... 
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
