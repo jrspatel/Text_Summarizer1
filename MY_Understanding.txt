@@ -1,1 +1,8 @@
 > LEARN HOW TO CREATE A LOGGING STRUCTURE
+
+
+## Data Ingestion components 
+
+where you get the data from source system to the target system, making it available for further processing or analysis ...... 
+
+
