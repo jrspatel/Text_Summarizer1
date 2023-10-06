@@ -1,4 +1,3 @@
-# creates a folder to store the components
 artifacts_root: artifacts
 
 # if you need some paths or links which might be useful later you could store them here .... 
@@ -12,4 +11,15 @@ data_ingestion:
 data_validation:
   root_dir: artifacts/data_validation 
   STATUS_FILE: artifacts/data_validation/status.txt 
-  ALL_REQUIRED_FILE: ['train', 'test', 'validation']
+  ALL_REQUIRED_FILE: ['train', 'test', 'validation'] 
+
+data_transformation:
+  root_dir: artifacts/data_transformation 
+  data_path: artifacts/data_ingestion/samsum_dataset
+  tokenizer_name: google/pegasus-cnn_dailymail
+
+model_trainer:
+  root_dir : artifacts/model_trainer 
+  data_path : artifacts/data_ingestion/samsum_dataset 
+  model_ckpt : google/pegasus-cnn_dailymail
+  
